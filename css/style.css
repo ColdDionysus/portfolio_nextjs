@@ -15,6 +15,7 @@ header .logo img {
   width: 125px;
   height: auto;
 }
+/* Header and Body Css sttarts here */
 .main ul {
   float: right;
   margin-top: 25px;
@@ -38,23 +39,21 @@ header .logo img {
   color: #000;
 }
 .main {
-  max-width: 1200px;
+  max-width: 1800px;
   margin: auto;
 }
 .title {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .title h1 {
-  color: #fff;
+  color: #ffca7a;
   font-size: 50px;
+  text-align: center;
 }
-.main ul li.active a {
-  color: #000;
-  background-color: #fff;
-}
+
 .text {
   position: absolute;
   top: 55%;
@@ -73,7 +72,7 @@ header .logo img {
   left: 35%;
 }
 .decoration {
-  color: rgba(108, 255, 164, 0.5);
+  color: #8eb0b3;
 }
 .btn {
   padding: 0.8rem 3rem;
@@ -84,13 +83,13 @@ header .logo img {
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  border-radius: 3em 3em / 5em;
+  border-radius: 4em 4em / 4em;
   position: absolute;
 }
 .btn-primary {
-  top: 70%;
+  top: 50%;
   left: 45%;
-  background: #fff;
+  background: #fdfa66;
   color: #000;
 }
 .btn-secondary {
@@ -98,5 +97,171 @@ header .logo img {
   left: 55%;
 }
 .btn:hover {
-  background-color: rgba(108, 255, 164, 0.5);
+  background-color: rgba(255, 142, 108, 0.5);
+  color: #fff;
 }
+.title h2 {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+.dec-last {
+  color: aqua;
+}
+/* Body css ends here  */
+
+/* Footer starts hrer */
+.footer {
+  position: absolute;
+  top: 90%;
+  left: 85%;
+}
+.footer .socail {
+  display: flex;
+  align-items: center;
+}
+.footer .social ul {
+  list-style-type: none;
+  display: inline;
+}
+.footer .social li {
+  display: inline;
+}
+.footer .social li a {
+  text-decoration: none;
+  cursor: pointer;
+  padding-right: 10px;
+  transition: 0.6s ease;
+}
+.footer .social ul li img {
+  width: 35px;
+}
+.footer .social li a:hover {
+  padding: 5px;
+  border-radius: 50%;
+  color: #8eb0b3;
+}
+.footer .designed h3 {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+.footer .designed {
+  align-items: center;
+}
+/* Footer ends here */
+/* Here Contact Page csss starts */
+.contact {
+  position: relative;
+  min-height: 80vh;
+  padding: 80px, 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+.contact .content {
+  max-width: 1000px;
+  text-align: center;
+}
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.contact .content p {
+  font-weight: 300;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contactInfo .box {
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon,
+.container .contactInfo .box .icon img {
+  min-width: 50px;
+  height: 60px;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+}
+.container .contactInfo .box .text1 {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text1 h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+.contactForm {
+  width: 20%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox textarea:focus ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+/* Contact page css ends
+ */
