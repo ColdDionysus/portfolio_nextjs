@@ -293,7 +293,7 @@ header .logo img {
   position: absolute;
   top: 60%;
   left: 60%;
-  background-color: white;
+  background-color: #edeae0;
   box-shadow: #e91e63;
   border-radius: 25px;
 }
@@ -334,7 +334,7 @@ header .logo img {
   overflow: hidden;
 }
 .content .card1 {
-  background-color: white;
+  background-color: #edeae0;
   width: 45%;
   position: absolute;
   top: 60%;
@@ -349,10 +349,11 @@ header .logo img {
 .content .card1 p {
   justify-content: center;
   padding: 2px;
-  margin-right: 3px;
+  margin-left: 5px;
+  margin-bottom: 10px;
 }
 .content .card3 {
-  background-color: white;
+  background-color: #edeae0;
   width: 100%;
   position: absolute;
   top: 110%;
@@ -415,7 +416,7 @@ header .logo img {
   position: absolute;
   top: 15%;
   left: 2%;
-  background-color: white;
+  background-color: #edeae0;
   width: 500px;
   max-height: 600px;
   margin-top: 15px;
@@ -473,7 +474,7 @@ header .logo img {
   margin-top: 5px;
 }
 .authorblog {
-  background-color: white;
+  background-color: #edeae0;
   position: absolute;
   top: 15%;
   left: 85%;

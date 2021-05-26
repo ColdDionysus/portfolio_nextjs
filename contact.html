@@ -68,23 +68,23 @@
 
             </div>
             <div class="contactForm">
-                <form>
+                <form name="contactformvalid" >
                     
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" ></input>
+                        <input type="text" name="fullname" ></input>
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" ></input>
+                        <input type="text" name="email" ></input>
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea type="text" name="" ></textarea>
+                        <textarea type="text" name="message" ></textarea>
                         <span>Type your Message.....</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+                        <input type="submit" name="button" onclick="formValidation()" value="Send">
                         
                     </div>
                 </form>
@@ -106,6 +106,20 @@
         </div>
     </div>
     <!-- Footer ends here -->
+    <script>
+        function formValidation(){
+            var name = document.forms["contactformvalid"]["fullname"].value;
+            var email = document.forms["contactformvalid"]["email"].value;
+            var message = document.forms["contactformvalid"]["message"].value;
+
+            if(name == "" || email == "" || message == ""){
+                alert("Please enter your details to continue ");
+            }
+            else{
+                alert("Thanks for Your Feedback");
+            }
+        }
+    </script>
 
 </body>
 </html>
