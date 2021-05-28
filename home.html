@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    
+    <style>
+        .datetime{
+            position: absolute;
+            top: 90%;
+            left:39%;
+        }
+        #timedate{
+            color: #fff;
+
+        }
+    </style>
 </head>
 <body>
     <!-- Header and navigation section starts here -->
@@ -40,6 +50,12 @@
             </div>
         </div>
     </header>
+    <div class="datetime">
+        <h1 style="color:#fff; text-align: center; font-size: 20px;">Current Date Time and TimeZone</h1>
+        <h2 style="font-size: 18px;">
+            <span id="timedate"></span>
+        </h2>
+    </div>
     <!-- Header and Navigation section ends here -->
     <!-- Body content or main content starts here...... -->
     <div class="title">
@@ -65,6 +81,6 @@
         </div>
     </div>
     <!-- Footer ends here -->
-
+<script src="js/script.js"></script>
 </body>
 </html>
