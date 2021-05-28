@@ -53,6 +53,9 @@
     <!-- Contents of cv starts here -->
     <div class="cvphoto" id="img">
         <img src="../images/pukar.jpg" alt="Pukar">
+        
+    </div>
+    <div class="cvphototexts">
         <h1>Hi! I am Pukar Gautam</h1>
         <h2>Amazing developer and Designer</h2>
     </div>
@@ -163,6 +166,31 @@
     margin-bottom: 50px;
     }
     </style>
+    <script>
+
+        var images = ['../images/pukar2.png', '../images/pukar.jpg'];
+
+        var x = 0;
+
+        var imgs = document.getElementById('img');
+
+        setInterval(slider, 3000);
+
+
+        function slider() {
+
+        if (x < images.length) {
+            x = x + 1;
+        } else {
+            x = 1;
+        }
+
+
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+
+        }
+    </script>
     
 </body>
 </html>
