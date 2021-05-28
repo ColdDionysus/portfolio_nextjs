@@ -1,8 +1,17 @@
+/* Author Pukar Gautam
+  Version 1.0
+  Islington College
+  
+
+*/
+
 * {
+  /* this css applyfor whole page */
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+/* Apply for body section */
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/background.jpg);
@@ -10,6 +19,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+/* Logo css */
 header .logo img {
   float: left;
   width: 125px;
@@ -108,7 +118,7 @@ header .logo img {
 .dec-last {
   color: aqua;
 }
-/* Body css ends here  */
+/* Body css and index ends here  */
 
 /* Footer starts hrer */
 .footer {
@@ -297,6 +307,7 @@ header .logo img {
   border-width: 8px;
 }
 /* Cv page css ends here */
+/* Cv content css starts here */
 .content .card2 {
   width: 25%;
   position: absolute;
@@ -381,7 +392,7 @@ header .logo img {
 }
 .content .card4 {
   margin-top: 25px;
-  /* background-color: skyblue; */
+
   width: 30%;
   position: absolute;
   top: 115%;
@@ -421,6 +432,8 @@ header .logo img {
 .content .card4 li a:hover {
   padding-left: 10px;
 }
+/* Css for cv page and content including in cv ends here */
+/* Css for blog page starts */
 .blogmain .topic {
   position: absolute;
   top: 15%;
@@ -516,3 +529,4 @@ header .logo img {
   border: #ff1194 solid;
   border-radius: 100px;
 }
+/* Css for blog page ends */
