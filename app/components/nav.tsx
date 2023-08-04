@@ -1,10 +1,9 @@
 "use client"
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Nav() {
-  
   const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <>
       <header className="text-gray-600 body-font">
@@ -25,35 +24,53 @@ export default function Nav() {
             <span className="ml-3 text-xl">P U K A R G A U T A M</span>
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-gray-900">Home</a>
+            <a className="nav-link mr-5 hover:text-indigo-600 relative cursor-pointer">
+              Home
+            </a>
             <div className="relative">
               <button
-                onClick = {()=> setShowDropdown(!showDropdown)}
-                className="mr-5 hover:text-gray-900 focus:outline-none"
+                onClick={() => setShowDropdown(!showDropdown)}
+                className="mr-5 hover:text-indigo-600 focus:outline-none cursor-pointer"
               >
                 About Me
               </button>
               {showDropdown && (
                 <div className="absolute z-10 bg-white py-2 w-40 rounded-md shadow-lg">
-                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#skills">
+                  <a
+                    className="block px-4 py-2 text-gray-800 hover:bg-indigo-400 hover:text-white cursor-pointer"
+                    href="#skills"
+                  >
                     Skills
                   </a>
-                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#experience">
+                  <a
+                    className="block px-4 py-2 text-gray-800 hover:bg-indigo-400 hover:text-white cursor-pointer"
+                    href="#experience"
+                  >
                     Experience
                   </a>
-                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#social-links">
+                  <a
+                    className="block px-4 py-2 text-gray-800 hover:bg-indigo-400 hover:text-white cursor-pointer"
+                    href="#social-links"
+                  >
                     Social Links
                   </a>
-                  <a className="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="#download-cv">
+                  <a
+                    className="block px-4 py-2 text-gray-800 hover:bg-indigo-400 hover:text-white cursor-pointer"
+                    href="#download-cv"
+                  >
                     Download CV
                   </a>
                 </div>
-             )}
+              )}
             </div>
-            <a className="mr-5 hover:text-gray-900">Certifications</a>
-            <a className="mr-5 hover:text-gray-900">Services</a>
+            <a className="nav-link mr-5 hover:text-indigo-600 relative cursor-pointer">
+              Certifications
+            </a>
+            <a className="nav-link mr-5 hover:text-indigo-600 relative cursor-pointer">
+              Services
+            </a>
           </nav>
-          <button className="text-white inline-flex items-center bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
+          <button className="text-white inline-flex items-center bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0 cursor-pointer">
             Contact
             <svg
               fill="none"
@@ -69,6 +86,31 @@ export default function Nav() {
           </button>
         </div>
       </header>
+
+      <style jsx>{`
+        .nav-link {
+          position: relative;
+          transition: color 0.3s;
+        }
+
+        .nav-link::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #6b46c1; /* Change this to your desired underline color */
+          opacity: 0;
+          transition: opacity 0.3s, transform 0.3s;
+          transform-origin: center;
+        }
+
+        .nav-link:hover::after {
+          opacity: 1;
+          transform: scaleX(1.1); /* Change the value to control the underline thickness */
+        }
+      `}</style>
     </>
   );
 }
